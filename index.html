@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jastin - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation"></div>
+    
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="nav-left">
+                    <button class="profile-btn" id="profileBtn">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#skills">Keahlian</a></li>
+                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                
+                <div class="nav-right">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="hamburger" id="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Profile Menu -->
+    <div class="profile-menu" id="profileMenu">
+        <div class="profile-menu-header">
+            <div class="profile-info">
+                <div class="profile-avatar">
+                    <img src="Ryo.jpg" alt="Profile">
+                </div>
+                <div class="profile-details">
+                    <h3>Jastinpro</h3>
+                    <p>Website Developer</p>
+                </div>
+            </div>
+            <button class="profile-menu-close" id="profileMenuClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="profile-menu-nav">
+            <ul>
+                <li>
+                    <a href="#home">
+                        <i class="fas fa-home"></i>
+                        <span>Beranda</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <i class="fas fa-user"></i>
+                        <span>Tentang Saya</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills">
+                        <i class="fas fa-code"></i>
+                        <span>Keahlian</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Proyek</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <i class="fas fa-envelope"></i>
+                        <span>Kontak</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="profile-menu-footer">
+            <div class="profile-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/Jastinpro49?t=CIgWRQZisA2lQcpt-dNGYg&s=09"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/atineee._?igsh=MWQ1aGM1bXJiZGl5eA=="><i class="fab fa-instagram"></i></a>
+                <a href="https://discord.gg/3uVdTbbT"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2023 Jastin</p>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="logo">Portfolio</div>
+            <button class="mobile-menu-close" id="mobileMenuClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-menu-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="greeting">Halo, Saya</div>
+                    <h1><span class="name">Jastinpro</span></h1>
+                    <div class="role">Web designer & web Developer</div>
+                    <p class="description">Menciptakan pengalaman digital yang menakjubkan dengan kode yang bersih dan desain yang intuitif</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+                        <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="cio.jpg" alt="Profile">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tentang Saya</h2>
+                <p>Lebih dekat dengan saya</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="kyo.jpg" alt="About">
+                </div>
+                <div class="about-text">
+                    <h3>Full Stack Developer & UI/UX Designer</h3>
+                    <p>Saya adalah seorang profesional di bidang pengembangan web dan desain UI/UX dengan pengalaman lebih dari 5 tahun. Passion saya adalah menciptakan solusi digital yang inovatif dan user-friendly.</p>
+                    <p>Dengan keahlian dalam berbagai teknologi web modern, saya dapat mengubah ide menjadi produk digital yang menarik dan fungsional. Saya selalu berusaha mengikuti tren terkini dan menerapkan praktik terbaik dalam setiap proyek.</p>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <h4>50+</h4>
+                            <p>Proyek Selesai</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>30+</h4>
+                            <p>Klien Puas</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>5+</h4>
+                            <p>Tahun Pengalaman</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Keahlian Saya</h2>
+                <p> Teknologi yang saya kuasai</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>HTML5, CSS3, JavaScript, React, Vue.js, TypeScript</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Express, Python, Django, RESTful APIs</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database</h3>
+                    <p>MySQL, PostgreSQL, MongoDB, Firebase</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Figma, Adobe XD, Sketch, Prototyping</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>React Native, Flutter, Progressive Web Apps</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud & DevOps</h3>
+                    <p>AWS, Docker, Kubernetes, CI/CD</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Proyek Terbaru</h2>
+                <p>Karya terbaik saya</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Ryo.jpg" alt="Project 1">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Platform e-commerce modern dengan fitur pembayaran online dan manajemen inventaris real-time</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Lihat Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 2">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>Aplikasi manajemen tugas kolaboratif dengan fitur real-time update dan drag & drop interface</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Tailwind</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Lihat Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>  
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 3">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Social Media Dashboard</h3>
+                        <p>Dashboard analitik social media dengan visualisasi data interaktif dan reporting otomatis</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Lihat Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hubungi Saya</h2>
+                <p>Mari Berkomunikasi</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    <p>Ada proyek menarik? Saya siap membantu mewujudkan ide Anda menjadi kenyataan.</p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Jastinpro49@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+62 899 9444 260</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Batam, Indonesia</span>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subjek</label>
+                        <input type="text" id="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+            <p>&copy; 2023 Nama Anda. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
